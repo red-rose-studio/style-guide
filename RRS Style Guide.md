@@ -1,8 +1,23 @@
-﻿# Red Rose Style Guides
-The following are guidelines we will be using on programming projects at Red Rose Studio in order to maintain clarity and consistency across codebases.
+# Red Rose Style Guides
+The following are guidelines we will be using on programming projects at Red Rose Studio in order to maintain clarity and consistency across codebases. These are subject to change as needed. Feel free to message [@sierra0451](https://discordapp.com/users/933474287380230154) on Discord or email [thesierra0451@gmail.com](mailto:thesierra0451@gmail.com) if you have any questions!
+
+## General
+### Naming rules
+Files:
+* File names and directories should be in pascal case: `Assets/Scripts/LowerFolder/MyClass.cs` or `Assets/Sprites/Player/PlayerSprites.png`.
+	* What this means is, essentially, that the first letter of each word should be capitalized, and there should be no spaces.
+	* For clarification purposes, this also means that acronyms should only have the first letter capitalized (e.g. prefer `Id` over `ID`).
+
+### Organization
+#### All games
+* HUD assets should go in a subfolder under `Assets/Sprites`.
+	* Same goes for sprites in 2D games.
+#### 3D games
+* All models should go into a subfolder under `Assets/Models`.
+* Decals and level textures should go into a subfolder under `Assets/Textures`, preferably one named after the level itself if only used in that level.
 
 ## C#
-Most of this style guide is pulled straight from [Google's C# style guide](https://google.github.io/styleguide/csharp-style.html), though they are *not* exactly the same. Some bits are pulled from [Microsoft's framework design guidelines](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/) as well.
+Most of this part of the style guide is pulled straight from [Google's C# style guide](https://google.github.io/styleguide/csharp-style.html), though they are *not* exactly the same. Some bits are pulled from [Microsoft's framework design guidelines](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/) as well.
 
 When referring to a "serialized field", we're describing a field with the `[SerializeField]` attribute.
 ### Formatting rules
@@ -18,7 +33,6 @@ Code:
 * Do NOT use Hungarian notation (i.e. prefer `bool CanDash` over `bool bCanDash`). We're not working in Unreal Engine.
 
 Files:
-* File names and directories should be in pascal case: `Assets/Scripts/LowerFolder/MyClass.cs`.
 * Where applicable, the file name should match the name of the script's main class: `MyClass.cs`.
 * Generally, prefer one core class per script, especially when said class derives from `MonoBehaviour`.
 
