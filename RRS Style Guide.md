@@ -12,6 +12,8 @@ Files:
 #### All games
 * HUD assets should go in a subfolder under `Assets/Sprites`.
 	* Same goes for sprites in 2D games.
+* All scenes should go in `Assets\_Scenes`.
+	* Note the underscore, which sorts the scenes folder to the top of the Project view.
 #### 3D games
 * All models should go into a subfolder under `Assets/Models`.
 * Decals and level textures should go into a subfolder under `Assets/Textures`, preferably one named after the level itself if only used in that level.
